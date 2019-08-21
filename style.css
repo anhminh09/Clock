@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+#clock{
+	display: block;
+	height: 300px;
+    width: 300px;
+    margin: 50px;
+    margin-left: 500px;
+    border-radius: 50%;
+    border: 10px solid black;
+    box-shadow: 0px 0px 30px #5f1818;
+    position: relative;
+}
+#centerClock{
+	background-color: blue;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: calc(50% - 10px);
+	left: calc(50% - 10px);
+	border-radius: 50%;
+	border: 5px solid black;
+}
+li{
+	list-style: none;
+}
+#clock ul li{
+	position: absolute;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+#clock ul li:nth-child(1){
+	top: 9px;
+    right: calc(50% - 82px);
+}
+#clock ul li:nth-child(2){
+    top: 61px;
+    right: calc(50% - 133px);
+}	
+#clock ul li:nth-child(3){
+	right: -9px;
+    top: calc(50% - 15px);
+}
+#clock ul li:nth-child(4){
+	top: 187px;
+    right: calc(50% - 133px);
+}
+#clock ul li:nth-child(5){
+	top: 234px;
+    right: calc(50% - 87px);
+}
+#clock ul li:nth-child(6){
+	top:calc(100% - 25px);
+	left: calc(50% - 15px);
+}
+#clock ul li:nth-child(7){
+	top: 234px;
+    right: calc(50% + 61px);
+}
+#clock ul li:nth-child(8){
+	top: 187px;
+    right: calc(50% + 103px);
+}
+#clock ul li:nth-child(9){
+	left:-8px;
+    top: calc(50% - 15px);
+}
+#clock ul li:nth-child(10){
+	top: 61px;
+    right: calc(50% + 100px);
+}
+#clock ul li:nth-child(11){
+	top: 12px;
+    right: calc(50% + 51px);
+}
+#clock ul li:nth-child(12){
+	top: -8px;
+    right: calc(50% - 15px);
+}
+#secHand{
+	position: absolute;
+    width: 7px;
+    height: 123px;
+    background-color: white;
+    top: 18px;
+    left: calc(50% - 3px);
+    border: 2px solid red;
+    border-radius: 5px;
+    transform: rotate(518400deg);
+    transform-origin: 3.5px 123px;
+    transition: transform 86400s linear;
+}
+#minuteHand{
+	position: absolute;
+    width: 7px;
+    height: 80px;
+    background-color: black;
+    top: 63px;
+    left: calc(50% - 3px);
+    border: 2px solid #131212;
+    border-radius: 5px;
+    transform: rotate(17280deg);
+    transform-origin: 3.5px 80px;
+    transition: transform 86400s linear;
+}
+#hourHand{
+	position: absolute;
+    width: 7px;
+    height: 40px;
+    background-color: red;
+    top: 102px;
+    left: calc(50% - 3px);
+    border: 2px solid blue;
+    border-radius: 5px;
+    transform: rotate(720deg);
+    transform-origin: 3.5px 40px;
+    transition: transform 86400s linear;
+}
